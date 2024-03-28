@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /*
+      Write your CSS here
+      Gap Colour: #000
+      White: #F0F1EC
+      Red: #E72F24
+      Black: #232629h
+      Blue: #004592
+      Yellow: #F9D01E
+
+      For dimensions, see dimensions.png image.
+      HINT: Remember you can't change the properties of grid lines.
+      But grid lines are transparent!
+      */
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        background-color: #000;
+        width: 748px;
+        height: 748px;
+        display: grid;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 130px 155px 20px;
+        gap: 9px;
+      }
+      .merah {
+        background-color: #e72f24;
+        grid-column: span 1;
+      }
+      .putih-1 {
+        background-color: #f0f1ec;
+        grid-column: span 3;
+      }
+      .putih-2 {
+        background-color: #f0f1ec;
+        grid-row: span 2;
+      }
+      .putih-3 {
+        background-color: #f0f1ec;
+        grid-area: 2/2/4/4;
+      }
+      .biru {
+        background-color: #004592;
+      }
+      .putih-4 {
+        background-color: #f0f1ec;
+        grid-row: span 2;
+        border-top: 10px solid #000;
+      }
+      .putih-5 {
+        background-color: #f0f1ec;
+      }
+      .kuning {
+        background-color: #f9d01e;
+      }
+      .hitam {
+        background-color: #000;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="container">
+      <div class="merah"></div>
+      <div class="putih-1"></div>
+      <div class="putih-2"></div>
+      <div class="putih-3"></div>
+      <div class="biru"></div>
+      <div class="putih-4"></div>
+      <div class="putih-5"></div>
+      <div class="kuning"></div>
+      <div class="hitam"></div>
+    </div>
+  </body>
+</html>
